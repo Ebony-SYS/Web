@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 1000px;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    display: flex;
+    position: fixed;
+}
+
+header .logo{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .logo span{
+    color: #ff0157;
+}
+
+header .nav{
+    position: relative;
+    display: flex;
+}
+
+header .nav li{
+    margin-left: 30px;
+}
+
+header .nav li a{
+    color: #fff;
+    font-weight: 300;
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 5rem;
+    color: #fff;
+}
+
+.banner .content p{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 5px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff0157;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover{
+    letter-spacing: 8px;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header.sticky .logo{
+    color: #111;   
+}
+
+header.sticky .nav li a{
+    color: #111;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.row .col50{
+    width: 48%;
+    position: relative;
+}
+
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span{
+    color: #ff0157;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.row .col50 .imgBx{
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+    position: relative;
+}
+
+.row .col50 .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .content{
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid#fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.3);
+}
+
+.menu .content .box .imgBx{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.menu .content .box .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.menu .content .box .text{
+    padding: 15px 0 5px;
+    text-align: center;
+}
+
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.chefes .content{
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.chefes .content .box{
+    width: 250px;
+    margin: 15px;
+}
+
+.chefes .content .box .imgBx{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.chefes .content .box .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.chefes .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.chefes .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.depoimentos{
+    background: url(img/bg2.jpg);
+    background-size: cover;
+}
+
+.branco .titleText, .branco p{
+    color: #fff;
+}
+
+.depoimentos .content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.depoimentos .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimentos .content .box .imgBx{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.depoimentos .content .box .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.depoimentos .content .box .text{
+    text-align: center;
+}
+
+.depoimentos .content .box .text p{
+    color: #668;
+    font-style: italic;
+}
+
+.depoimentos .content .box .text h3{
+    color: #ff0157;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.contato{
+    background: url(img/bg3.jpg);
+    background-size: cover;
+}
+
+.formcontato{
+    padding: 75px 50px;
+    max-width: 500px;
+    margin-top: 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.formcontato h3{
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.formcontato .inputBox{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formcontato .inputBox input,
+.formcontato .inputBox textarea{
+    width: 100%;
+    padding: 10px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #555;
+    outline: none;
+    resize: none;
+}
+
+.formcontato .inputBox input[type="submit"]{
+    color: #111;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff0157;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    max-width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.copyR{
+    padding:8px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.copyR p{
+    color: #333;
+}
+
+.copyR a{
+    color: #ff0157;
+    font-weight: 500;
+}
+
+@media (max-width: 991px){
+    header, 
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .nav {
+        display: none;
+    }
+    header .nav li {
+        margin-left: 0;
+    }
+    header .nav li a {
+        color: #111;
+        font-size: 1.6em;  
+    }
+    header .nav.active { 
+        top: 68px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    .menuToggle {
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        position: relative;
+    }
+    .menuToggle.active {
+        background: url(img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row { 
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content {
+        margin-top: 20px;
+    }
+    .menu .content .box {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx {
+        height: 260px;
+    }
+    .titulo {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .depoimentos .content .box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .formcontato {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .copyR {
+        padding:1px 5px;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        font-size: 12px;
+    }
+   
+}
+
+@media (max-width: 480px){
+    .banner .content h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
