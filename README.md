@@ -9,7 +9,7 @@
 
 <hr/>
 
-#### Starbucks
+<h4 align="center"> Starbucks </h4>
 
 <table>
  <tr>
@@ -28,6 +28,39 @@
    <img src="starbucks/img/screenFocus2.jpg"  title="img2">
   </td>
  </tr>
+</table>
+
+<hr/>
+
+<h4 align="center"> Jogo da Velha </h4>
+
+<table>
+ <tr>
+  <td>
+   <img src="jogoDaVelha/img/screen.jpg"  title="img1">
+  </td>
+ </tr>
+</table> 
+
+<table>
+ <tr>
+  <td>
+   <img src="jogoDaVelha/img/screenOwin.jpg"  title="img1">
+  </td>
+  <td>
+   <img src="jogoDaVelha/img/screenOwin1.jpg"  title="img2">
+  </td>
+ </tr>
+
+ <tr>
+  <td>
+   <img src="jogoDaVelha/img/screenXwin.jpg"  title="img1">
+  </td>
+  <td>
+   <img src="jogoDaVelha/img/screenXwin1.jpg"  title="img2">
+  </td>
+ </tr>
+
 </table>
 
 <hr/>
