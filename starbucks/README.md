@@ -10,7 +10,7 @@
 <table>
  <tr>
   <td>
-   <img src="starbucks/img/screen.jpg"  title="img1">
+   <img src="img/screen.jpg"  title="img1">
   </td>
  </tr>
 </table> 
@@ -18,10 +18,10 @@
 <table>
  <tr>
   <td>
-   <img src="starbucks/img/screenFocus1.jpg"  title="img1">
+   <img src="img/screenFocus1.jpg"  title="img1">
   </td>
   <td>
-   <img src="starbucks/img/screenFocus2.jpg"  title="img2">
+   <img src="img/screenFocus2.jpg"  title="img2">
   </td>
  </tr>
 </table>
