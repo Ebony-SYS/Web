@@ -19,41 +19,14 @@ ou mesmo sendo riscado sobre um pedaço de papel ou mesa. O menor tabuleiro
 do mundo foi feito com DNA
 </p>
 
-<table>
- <tr>
-  <td>
-   <img src="img/screen.jpg"  title="img1">
-  </td>
- </tr>
-</table> 
+<div align="center">
+ <img src="https://user-images.githubusercontent.com/52077278/140620825-8bcbe239-b987-4770-87ad-b114d6938b6b.gif">
+</div>
 
-<table>
- <tr>
-  <td>
-   <img src="img/screenOwin.jpg"  title="img1">
-  </td>
-  <td>
-   <img src="img/screenOwin1.jpg"  title="img2">
-  </td>
- </tr>
 
- <tr>
-  <td>
-   <img src="img/screenXwin.jpg"  title="img1">
-  </td>
-  <td>
-   <img src="img/screenXwin1.jpg"  title="img2">
-  </td>
- </tr>
-
-</table>
-
-<p>
-Quer contribuir? Seja muito bem vindo e <b>vambóóóra!</b>
-    
 Acompanhe o desenvolvimento → [Canal códigos simples](https://www.youtube.com/channel/UC8fRZfYGd21_D8DwuEcFuHw)
 </br>...mais informações → <a href="https://api.whatsapp.com/send?phone=5511979714423">WhatsApp</a>
-</p>
+
 
 
 
