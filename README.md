@@ -91,13 +91,9 @@
 
 <h4 align="center"> Lâmpada </h4>
 
-<table>
- <tr>
-  <td>
-   <img src="lampada/img/screen3.jpg"  title="img1">
-  </td>
- </tr>
-</table> 
+<div align="center">
+ <img src="https://user-images.githubusercontent.com/52077278/140599612-b7ec0733-c279-430d-bfc3-edd2efc8ad0e.gif">
+</div>
 
 <table>
  <tr>
