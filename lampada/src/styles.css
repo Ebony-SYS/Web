@@ -1,0 +1,59 @@
+body{
+    background-color: #000000;
+} 
+
+.ebony{
+    display: flex;
+    justify-content: center;
+}
+
+.lampada{
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 10px;    
+}
+
+.btn{
+    display: flex;   
+    justify-content: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;   
+}
+
+.btn button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;   
+    font-family: 'Ubuntu', sans-serif;    
+    border-radius: 45%;
+    color: white; 
+    transition-duration: 0.3s;   
+    cursor: pointer;   
+}
+
+#on{
+    background-color: #94bff8;
+    color: #000;
+    font-weight: 800;
+}
+
+#on:hover{
+    background-color: #03045e;
+    color: #fff;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+#off{
+    background-color: #fbff00;
+    color: #000;
+    font-weight: 800;
+}
+
+#off:hover{
+    background-color: #795d02;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 800;
+}
