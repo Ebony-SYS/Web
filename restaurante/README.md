@@ -8,33 +8,16 @@
     para quaisquer outros projetos que necessitar.
 </p>
 
-<table>
- <tr>
-  <td>
-   <img src="img/screen.jpg"  title="img1">
-  </td>
- </tr>
-</table> 
+<div align="center">
+ <img src="https://user-images.githubusercontent.com/52077278/140620879-f78373c3-4367-4dae-b7e8-513a959a1497.gif">
+</div>
 
-<table>
- <tr>
-  <td>
-   <img src="img/screen1.jpg"  title="img1">
-  </td>
-  <td>
-   <img src="img/screen2.jpg"  title="img2">
-  </td>
- </tr>
-</table>
-
->Quer contribuir? Seja muito bem vindo e <b>vambóóóra!</b>
-
-<p> 
+<hr/>
 
 Acompanhe o desenvolvimento → [Canal códigos simples](https://www.youtube.com/channel/UC8fRZfYGd21_D8DwuEcFuHw)
 </br>...mais informações → <a href="https://api.whatsapp.com/send?phone=5511979714423">WhatsApp</a>
 
-</p>
+
 
 
 
