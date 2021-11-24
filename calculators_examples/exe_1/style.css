@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(img/bg2.jpg);
+    background-size: cover;
+}
+
+body::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e91e63,transparent, #ffc107, transparent);
+    position: absolute;
+    content: '';
+    clip-path: circle(35% at 50% 50%);
+}
+
+body::after{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    clip-path: circle(20% at 70% 90%);
+}
+
+.container{
+    background: rgba(255,255,255,0.05);
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+
+.container .calculator{
+    position: relative;
+    display: grid;
+}
+
+.container .calculator .value{
+    grid-column: span 4;
+    font-size: 30px;
+    text-align: right;
+    color: #fff;
+    height: 90px;
+    width: 300px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);     
+}
+
+.container .calculator span{
+    display: grid;
+    width: 75px;
+    height: 75px;
+    place-items: center;
+    font-size: 22px;
+    color: #ffffff90;
+    user-select: none;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .calculator span:hover{
+    transition: 0.3s;
+    background: #da00ff10;
+}
+
+.container .calculator span:active{
+    background-color: #88f8f880;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .calculator .limpar{
+    grid-column: span 2;
+    width: 150px;
+}
+
+.container .calculator .limpar:hover{
+    background: #ffc10720;
+}
+
+.container .calculator .limpar:active{
+    background: #07ff1c30;
+}
+
+.container .calculator .somar{
+    grid-row: span 2;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
