@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@300&family=Arimo:wght@500&family=Saira:display=swap');
+
+:root {
+    --verde: #74fb52;
+    --preto: #00000090;
+    --branco: #FFF;
+    --cinza: #696969;
+    --font-principal: 'Anek Bangla', sans-serif;
+    --font1: 1rem;
+    --font2: 1.2rem;
+    --font4: 1.4rem;
+    --font8: 1.8rem;
+    --font-peso3: 300;
+    --font-peso4: 400;
+    --font-peso6: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(45deg, var(--cinza), var(--preto));
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    margin: 1%;
+    text-align: center;
+    font-family: var(--font-principal);
+    color: var(--verde);
+    font-size: var(--font8);
+    font-weight: var(--font-peso6);
+}
+
+.titulo span {
+    font-size: var(--font4);
+    font-weight: var(--font-peso2);
+    color: var(--branco);
+}
+
+.rodape {
+    margin: 2.7%;
+    font-size: var(--font-peso2);
+    font-weight: var(--font-peso3);
+    color: var(--branco);
+    font-family: var(--font-principal);
+    text-align: center;
+}
+
+.tela {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
