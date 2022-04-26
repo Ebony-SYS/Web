@@ -37,7 +37,7 @@ body{
     height: auto;
 }
 
-.pSecreta {
+.palavraSecreta {
     display: flex;
     flex-direction: row;
     justify-content: center;
