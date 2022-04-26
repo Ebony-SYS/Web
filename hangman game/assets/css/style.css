@@ -1,8 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+:root {
+    --font: 'IBM Plex Sans', sans-serif;
+    --fontp4: 400;
+    --fontp6: 600;
+    --preto: #000;
+    --cinza: #878787;
+    --branco: #fff;
+    --verde: rgb(108, 233, 67);
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-family: var(--font);
+}
+
+body{
+    background: linear-gradient(90deg, var(--cinza), var(--preto), var(--cinza));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #imgforca {
-    height: 1em;
+    margin: 10px 0;
+    width: 250px;
+    height: auto;
 }
+
+.pSecreta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.letra {
+    margin: 0 3px;
+    text-transform: lowercase;
+    border-bottom: 3px solid var(--verde);
+}
+
+.categoria {
+    margin: 18px 0;
+}
+
+.teclas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.teclas button{
+    margin: 5px 3px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid var(--cinza);
+}
+
+.teclas button:hover {
+    border: 2px solid var(--verde);
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.fonte6 {
+    color: var(--branco);
+    font-size: 2.3rem;
+    font-weight: var(--fontp6);
+}
+
+.fonte4 {
+    color: var(--verde);
+    font-size: 1.8rem;
+    font-weight: var(--fontp4);
+}
+
