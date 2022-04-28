@@ -7,7 +7,7 @@
     --preto: #000;
     --cinza: #878787;
     --branco: #fff;
-    --verde: rgb(108, 233, 67);
+    --verde: #6ce943;
 }
 
 * {
@@ -35,17 +35,18 @@ body {
     background-repeat: no-repeat;
     width: 270px;
     height: 270px;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .palavraSecreta {
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.letra {
+.letras {
+    font-size: 40px;
     margin: 0 3px;
     text-transform: lowercase;
     border-bottom: 3px solid var(--verde);
@@ -92,3 +93,19 @@ body {
     font-size: 1.8rem;
     font-weight: var(--fontp4);
 }
+
+#reiniciar {
+    margin: 5px 3px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid var(--preto);
+}
+
+#reiniciar:hover {
+    border: 1px solid var(--verde);
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
