@@ -3,6 +3,11 @@ let palavraSorteada;
 let erros = 6;
 let lista = [];
 
+let btnReiniciar = document.querySelector("#btnReiniciar")
+btnReiniciar.addEventListener("click", function(){
+    location.reload();
+});
+
 const palavras = [
     (p01 = {
         nome: "GOIABA",
@@ -95,6 +100,8 @@ function mostrarPalavra() {
 }
 
 function verificarLetra(letra) {
+    document.getElementById("tecla_" + letra).disabled = true;
+
     if (erros > 0) {
         marcarLetra("tecla_" + letra);
         compararLetra(letra);
@@ -112,7 +119,12 @@ function compararLetra(letra) {
 
     if (posicao < 0) {
         erros--;
-        // mudar imagem da forca
+        trocarImagem();
+
+        if (erros == 0) {
+            abrirModal("Vish, perdeu! Mas relaxe, tente mais uma aee!!!<br>Ahhh antes que eu me esqueça, a palavra era " + palavraSorteada + ".");
+        }
+
     } else {
         for (i = 0; i < palavraSorteada.length; i++) {
             if (palavraSorteada[i] == letra) {
@@ -129,12 +141,54 @@ function compararLetra(letra) {
     }
 
     if (vitoria == true) {
-        //mensagem de vitoria
+        abrirModal("Aeee! Legal, acertou a palavra!!!<br>Tem coragem de tentar mais uma?");
         erros = 0;
     }
 }
 
 
-function novaImagem() {
-    
+function trocarImagem() {
+    switch (erros) {
+        case 5:
+            document.getElementById("imagemForca").style.background = "url('/assets/img/forca01.png')"
+            break;
+        case 4:
+            document.getElementById("imagemForca").style.background = "url('/assets/img/forca02.png')"
+            break;
+        case 3:
+            document.getElementById("imagemForca").style.background = "url('/assets/img/forca03.png')"
+            break;
+        case 2:
+            document.getElementById("imagemForca").style.background = "url('/assets/img/forca04.png')"
+            break;
+        case 1:
+            document.getElementById("imagemForca").style.background = "url('/assets/img/forca05.png')"
+            break;
+        case 0:
+            document.getElementById("imagemForca").style.background = "url('/assets/img/forca06.png')"
+            break;
+        default:
+            document.getElementById("imagemForca").style.background = "url('/assets/img/forca.png')"
+            break;
+    }
 }
+
+function abrirModal(mensagem) {
+    let modaltxt = document.getElementById("modaltxt");
+    modaltxt.innerHTML = mensagem;
+
+    $("#modal").modal({
+        show: true
+    });
+}
+
+
+/*
+Swal.fire({
+        position: 'center',
+        icon: 'success',
+        text: 'Einnta, perdeu hem... bóra tentar outra?!',
+        showConfirmButton: false,
+        timer: 2000
+      })
+*/
