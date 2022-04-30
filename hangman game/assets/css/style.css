@@ -6,19 +6,21 @@
     --fontp6: 600;
     --preto: #000;
     --cinza: #878787;
+    --cinzafechado: #373737;
     --branco: #fff;
-    --verde: rgb(108, 233, 67);
+    --verde: #6ce943;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: var(--font);
+    overflow: hidden;
+    text-decoration: none !important;
 }
 
-body{
+body {
     background: linear-gradient(90deg, var(--cinza), var(--preto), var(--cinza));
-    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -28,13 +30,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-#imgforca {
-    margin: 10px 0;
-    width: 250px;
-    height: auto;
+#imagemForca {
+    background-image: url("/assets/img/forca.png");
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 270px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .palavraSecreta {
@@ -43,14 +47,20 @@ body{
     justify-content: center;
 }
 
-.letra {
+.letras {
+    font-size: 40px;
     margin: 0 3px;
     text-transform: lowercase;
     border-bottom: 3px solid var(--verde);
 }
 
 .categoria {
-    margin: 18px 0;
+    margin-top: 20px;
+}
+
+.teclado {
+    padding-bottom: 100px;
+    margin-top: 40px;
 }
 
 .teclas {
@@ -59,7 +69,7 @@ body{
     justify-content: center;
 }
 
-.teclas button{
+.teclas button {
     margin: 5px 3px;
     font-size: 20px;
     width: 40px;
@@ -72,6 +82,62 @@ body{
     border: 2px solid var(--verde);
     background-color: var(--preto);
     color: var(--branco);
+    cursor: pointer;
+}
+
+.teclas button:disabled {
+    cursor: not-allowed;
+}
+
+#btnReiniciar {
+    margin: 5px 3px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid var(--preto);
+}
+
+#reiniciar:hover {
+    border: 1px solid var(--verde);
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.modal {
+    background: var(--preto);
+}
+
+.stylemodal {
+    background-color: var(--cinza);
+    color: var(--preto);
+    font-weight: 600;
+    text-align: center;  
+    border: 1.5px solid var(--verde) !important;  
+}
+
+.btn {
+    background: var(--cinzafechado);
+    color: var(--branco);
+    border-bottom: 3px solid var(--verde) !important;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--preto);
+    border-bottom: 3px solid var(--verde) !important;
+    font-weight: 600;
+}
+
+.btn a{
+    background: var(--cinzafechado);
+    color: var(--branco);
+}
+
+.btn a:hover {
+    background: transparent;
+    color: var(--preto);
+    font-weight: 600;
 }
 
 .fonte6 {
@@ -85,4 +151,3 @@ body{
     font-size: 1.8rem;
     font-weight: var(--fontp4);
 }
-
