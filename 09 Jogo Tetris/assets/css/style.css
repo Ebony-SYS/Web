@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@300&family=Arimo:wght@500&family=Saira:display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+    --verde: #74fb52;
+    --verdeesc: #084101;
+    --preto: #101010;
+    --cinzaesc: #373737;
+    --cinza: #696969;
+    --branco: #fff;
+    --font-principal: 'Anek Bangla', sans-serif;
+    --font-secundaria: 'Share Tech Mono', monospace;
+    --font1: 1rem;
+    --font2: 1.2rem;
+    --font4: 1.4rem;
+    --font8: 1.8rem;
+    --font10: 2rem;
+    --font-peso3: 300;
+    --font-peso4: 400;
+    --font-peso6: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: var(--font-principal);
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(45deg, var(--preto),  var(--cinzaesc), var(--cinza), var(--cinzaesc));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    padding: 0 25%;
+    color: var(--branco);
+}
+
+header h2 {
+    font-family: var(--font-secundaria);
+    letter-spacing: 1px;
+    font-size: var(--font8);
+}
+
+header h2 span {
+    font-family: var(--font-secundaria);
+    font-size: var(--font8);
+    color: var(--verde);
+}
+
+header button {
+    color: var(--branco);
+    font-size: var(--font4);
+    padding: 0 30px;
+    background-color: var(--cinza);
+    border-radius: 10px;
+    border-bottom: 3px solid var(--verde);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 14px 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    height: 600px;
+    background-color: var(--cinzaesc);
+    border-radius: 3px;
+}
+
+.grid div {
+    width: 26px;
+    height: 26px;
+    border: 1px solid var(--cinza);
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--cinzaesc);
+    position: fixed;
+    text-align: center;
+    font-size: var(--font2);
+}
+
+footer a {
+    color: var(--preto) !important;
+}
+
+footer span {
+    color: var(--verde);
+}
+
