@@ -53,7 +53,7 @@
 <h4 align="center"> Snake Game </h4>
 
 <div align="center">
- <img src="https://github.com/Ebony-SYS/jsProject/blob/upstream/snake%20game/assets/img/snakegame.gif">
+ <img src="https://github.com/Ebony-SYS/jsProject/blob/main/08%20Jogo%20Snake/assets/img/snakegame.gif?raw=true">
 </div>
 
 <hr/>
