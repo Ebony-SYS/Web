@@ -63,6 +63,12 @@ header button {
     border-bottom: 3px solid var(--verde);
 }
 
+header button:hover {
+    color: var(--verde);
+    background-color: var(--preto);
+    border-bottom: 3px solid var(--branco);
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -81,11 +87,32 @@ header button {
 .grid div {
     width: 26px;
     height: 26px;
-    border: 1px solid var(--cinza);
+    border: 1px solid var(--cinzaesc);
 }
 
+.tetromino {
+    background-color: var(--verde);
+}
 
+.base {
+    background-color: var(--preto);
+    border: 1px solid var(--preto) !important;
+}
 
+.miniGrid {
+    width: 80px;
+    height: 80px;
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.miniGrid div {
+    width: 20px;
+    height: 20px;
+}
 
 
 
@@ -110,3 +137,6 @@ footer span {
     color: var(--verde);
 }
 
+footer a:hover {
+    color: var(--branco) !important;
+}
