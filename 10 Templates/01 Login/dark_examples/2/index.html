@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <title>Leonardo Alves</title>
+</head>
+
+<body>
+  <div class="show-login-btn">
+    <i class="fas fa-sign-in-alt"></i>
+    Clique Aqui!
+  </div>
+
+  <div class="login-box">
+    <div class="hide-login-btn"><i class="fas fa-times"></i>
+    </div>
+
+    <form class="login-form" action="index.html" method="post">
+      <h1>Login</h1>
+      <input class="txtb" type="text" name="" placeholder="Email / Nome de usuário">
+      <input class="txtb" type="password" name="" placeholder="Senha">
+      <input class="login-btn" type="submit" name="" value="Entrar">
+    </form>
+  </div>
+
+
+  <script type="text/javascript">
+    $(".show-login-btn").on("click", function () {
+      $(".login-box").toggleClass("showed");
+    });
+    $(".hide-login-btn").on("click", function () {
+      $(".login-box").toggleClass("showed");
+    });
+  </script>
+</body>
+</html>

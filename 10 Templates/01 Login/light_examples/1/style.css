@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.imgP {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    background: url(img/bck_2.jpg) center no-repeat;
+}
+
+.login {
+    width: 700%;
+    max-width: 500px;
+    right: 0;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    background: #fff;
+
+}
+
+.login form {
+    margin: 160px 30px;
+}
+
+.login h2 {
+    color: #e73407;
+    font-size: 30px;
+}
+
+.login label {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+}
+
+.txtbox {
+    width: 100%;
+    padding: 4px 0;
+    padding-left: 4px;
+    font-size: 18px;
+    color: #e73407;
+}
+
+.check {
+    margin: 10px 0;
+}
+
+.btn{
+    padding: 8px 50px;
+    font-size: 18px;
+    float: right;
+    color: #fff;
+    background: #e73407;
+    display: block;
+    border: none;
+}

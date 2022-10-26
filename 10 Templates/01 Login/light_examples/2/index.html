@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Leonardo Alves</title>
+</head>
+
+<body>
+    <form action="#" class="loginForm">
+      <h1>L<span>ogi</span>n</h1>
+  
+      <div class="textBox">
+        <input type="text" required>
+        <div class="placeholder">Nome de Usuário / Email</div>
+      </div>
+  
+      <div class="textBox">
+        <input type="password" required>
+        <div class="placeholder">Senha</div>
+        <div class="mostrarSenha fas fa-eye-slash"></div>
+      </div>
+  
+      <div class="checkbox">
+        <input type="checkbox">
+        <div class="fas fa-check"></div>
+        Continuar conectado.
+      </div>
+  
+      <button class="btn fas fa-arrow-right" disabled></button>
+      <a href="#">Esqueci minha senha!</a>
+      <a href="#">Criar conta.</a>
+      <img class="logo" src="img/logo.png" alt="Logo Ebony SyS">
+    </form>
+  
+    <script>
+      var fields = document.querySelectorAll(".textBox input");
+      var btn = document.querySelector(".btn");
+      function check(){
+        if(fields[0].value != "" && fields[1].value != "")
+          btn.disabled = false;
+        else
+          btn.disabled = true;  
+      }
+  
+      fields[0].addEventListener("keyup",check);
+      fields[1].addEventListener("keyup",check);
+  
+      document.querySelector(".mostrarSenha").addEventListener("click",function(){
+        if(this.classList[2] == "fa-eye-slash"){
+          this.classList.remove("fa-eye-slash");
+          this.classList.add("fa-eye");
+          fields[1].type = "text";
+        }else{
+          this.classList.remove("fa-eye");
+          this.classList.add("fa-eye-slash");
+          fields[1].type = "password";
+        }
+      });
+    </script>
+</body>
+</html>

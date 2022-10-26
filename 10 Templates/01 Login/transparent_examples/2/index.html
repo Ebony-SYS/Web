@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <title>Leonardo Alves</title>
+  </head>
+  <body>
+
+    <form class="login_form" action="index.html">
+      <h1>L<span>ogin</span></h1>
+
+      <div class="txtbox">
+        <input type="text">
+        <span data-placeholder="Nome de usuário"></span>
+      </div>
+
+      <div class="txtbox">
+        <input type="password">
+        <span data-placeholder="Senha"></span>
+      </div>
+
+      <input type="submit" class="btn_login" value="Login">
+
+      <div class="bottom_text">
+        Não tem uma conta? <a href="#">Cadastre-se</a> 
+      </div>
+
+    </form>
+
+    <script type="text/javascript">
+      $(".txtbox input").on("focus", function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtbox input").on("blur", function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+    </script>
+  </body>
+</html>

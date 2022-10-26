@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa';
+    box-sizing: border-box;
+}
+
+body{
+    background: #610379;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background: #fff;
+    padding: 40px 20px 40px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -10px 10px 10px rgba(0,0,0,0.3);
+    width: 500px;
+    max-width: 100%;
+}
+
+.title{
+    position: relative;
+    font-size: 20px;
+    color: #610379;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 90px;
+    bottom: 0;
+    background: #610379;
+}
+
+.form{
+    padding: 30px 20px;
+}
+
+.form_control{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+}
+
+.form_control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form_control input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #101010;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    color: black;
+}
+
+
+.form_control.success input{
+    border-color: #1eff0060;
+}
+
+.form_control.error input{
+    border-color: #ff000060;
+}
+
+.form_control input:focus{
+    border-bottom: 3px solid #610379;
+    font-weight: 600;
+}
+
+.form_control i{
+    position: absolute;
+    top: 30px;
+    left: 96%;
+    visibility: hidden;
+}
+
+.form_control.success i .fa-check-circle{
+    visibility: visible;
+    color: #1eff00;
+}
+
+.form_control.error i .fa-exclamation-circle{
+    visibility: visible;
+    color: #ff0000;
+}
+
+.form_control small{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form_control.error small{
+    visibility: visible;
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.form button{
+    position: relative;
+    background: #610379;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.form button:hover{
+    background: linear-gradient(190deg, #610379,#fff, #610379);
+    color: #101010;
+}
+
+

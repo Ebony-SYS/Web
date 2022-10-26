@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2';
+    color: #1d1d1d;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+a{
+    color: #45f1a1;
+    font-size: 18px;
+}
+
+body{
+    background: url(img/bg2.jpg) no-repeat;
+   
+}
+
+.container{
+    width: 600px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    box-shadow: 5px 8px 15px rgba(0,0,0,0.5);
+    border-radius: 16px;
+    background: #10101000;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font: 1.3rem;
+    color: #fff;
+}
+
+.form_cad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full_box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.box{
+    flex: 1 1 40%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 5%;
+}
+
+.txt_label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.txt_input{
+    border-bottom: 2px solid  #1d1d1d;
+    padding: 10px;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e7e7e7;
+}
+
+.txt_input:focus{
+    border-color: #45f1a1;
+}
+
+.txt_input::placeholder{
+    color: #a3a3a3;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+input[type="submit"]{
+    background: #10101000;
+    padding: 2px;
+    width: 22%;
+    margin-left: 40%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 2px 0px 5px rgba(255,255,255, 0.2);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 2px 0px 5px #45f1a1;
+    cursor: pointer;
+    color: #45f1a1;
+}
+
+.check{
+    margin: 40px 5px;
+}
+
+.check, .check_label{
+    display: inline-block;
+    width: auto;
+    color: #e7e7e7;
+    font-size: 16px;
+}
+
+.error_validation{
+    color: #ff1a1a;
+    font-size: 16px;
+    position: absolute;
+}
+
+.template{
+    display: none;
+}

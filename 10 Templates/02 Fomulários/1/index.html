@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Leonardo Alves</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Olá, vamos criar seu cadastro!</h1>
+
+        <form class="form_cad" id="form_cad">
+            <div class="full_box">
+                <label class="txt_label">Email:</label>
+                <input type="text" name="email" class="txt_input" id="email" placeholder="@email.com" data-min-length="2" data-email-validate>
+            </div>
+            <div class="box spacing">
+                <label class="txt_label">Nome:</label>
+                <input type="text" name="name" class="txt_input" id="name" placeholder="Leonardo" data-required data-min-length="3" data-max-length="16">
+            </div>
+            <div class="box">
+                <label class="txt_label">Sobrenome:</label>
+                <input type="text" name="lastname" class="txt_input" id="lastname" placeholder="Alves" data-required data-only-letters>
+            </div>
+            <div class="box spacing">
+                <label class="txt_label">Senha:</label>
+                <input type="password" name="password" class="txt_input" id="password" placeholder="Mínimo 8 caracteres" data-password-validate data-required>
+            </div>
+            <div class="box">
+                <label class="txt_label">Confirmação de senha:</label>
+                <input type="password" name="passconfirmation" class="txt_input" id="passconfirmation" placeholder="Repita a senha" data-equal="password">
+            </div>
+            <div class="full_box">
+                <input type="checkbox" name="agreement" id="agreement" class="check">
+                <label for="agreement" id="agreement_label" class="check_label">Li e concordo com os <a href="#">termos de uso.</a></label>
+            </div>
+            <div class="full_box">
+                <input type="submit" class="btn_submit" id="btn_submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+    <p class="error_validation template"></p> 
+
+</body>
+</html>

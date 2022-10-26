@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Leonardo Alves - Form example</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="userTitle">Vamos lá, crie seu cadastro!</div>
+
+        <form action="#">
+
+            <div class="userDetails">
+                <div class="inputBox">
+                    <span class="details">Nome completo</span>
+                    <input type="text" placeholder="Insira seu nome completo" required>
+                </div>
+                <div class="inputBox">
+                    <span class="details">Nome de usuário</span>
+                    <input type="text" placeholder="Insira um nome de usuário" required>
+                </div>
+                <div class="inputBox">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Insira seu melhor email" required>
+                </div>
+                <div class="inputBox">
+                    <span class="details">Telefone</span>
+                    <input type="text" placeholder="Insira seu melhor contato" required>
+                </div>
+                <div class="inputBox">
+                    <span class="details">Senha</span>
+                    <input type="password" placeholder="Insira uma senha forte" required>
+                </div>
+                <div class="inputBox">
+                    <span class="details">Confirme a senha</span>
+                    <input type="password" placeholder="Insira novamente a senha" required>           
+                </div>
+            </div>
+            <div class="genderDetails">
+                <input type="radio" name="gender" id="dot_1">
+                <input type="radio" name="gender" id="dot_2">
+                <input type="radio" name="gender" id="dot_3">
+                <input type="radio" name="gender" id="dot_4">
+
+                <span class="genderTitle">Gênero</span>
+
+                <div class="category">
+                    <label for="dot_1">
+                        <span class="dot one"></span>
+                        <span class="gender">Masculino</span>
+                    </label>
+                    <label for="dot_2">
+                        <span class="dot two"></span>
+                        <span class="gender">Feminino</span>
+                    </label>
+                    <label for="dot_3">
+                        <span class="dot three"></span>
+                        <span class="gender">Outro</span>
+                    </label>
+                </div>
+            </div>
+            <div class="btnSave">
+                <input type="submit" value="Salvar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

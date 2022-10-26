@@ -1,0 +1,87 @@
+*{
+  font-family: "montserrat",sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #101010;
+}
+.login-box{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg,#c0dac8,#035f22);
+  transition: 1s;
+}
+.login-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #101010;
+  text-align: center;
+}
+.login-form h1{
+  font-weight: 400;
+  margin-top: 0;
+}
+.txtb{
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  background: #021d0730;
+  border: 1px solid #101010;
+  padding: 10px 20px;
+  color: white;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.txtb::placeholder{
+  color: #ffffff60;
+}
+
+.login-btn{
+  width: 240px;
+  background: #2c5035;
+  border: 0;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.hide-login-btn{
+  color: #000;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 24px;
+  opacity: .7;
+}
+.show-login-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #6df59a;
+  border: 2px solid;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.show-login-btn:hover{
+  letter-spacing: 3px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.showed{
+  left: 0;
+}

@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+section{
+    background: linear-gradient(to bottom, #f88bef, #91a8f3);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1){
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: #8450e4;
+}
+
+section .color:nth-child(2){
+    bottom: -150px;
+    left: -100px;
+    width: 500px;
+    height: 500px;
+    background: #59ec7e;
+}
+
+section .color:nth-child(3){
+    right: 100px;
+    bottom: 50px;
+    width: 300px;
+    height: 300px;
+    background: #c5e703;
+}
+
+.box{
+    position: relative;
+}
+
+.box .square{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes animate{
+    0%, 100%{
+        transform: translateY(-40px)
+    }50%{
+        transform: translateY(40px)
+    }
+}
+
+.box .square:nth-child(1){
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+
+.box .square:nth-child(2){
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+
+}
+
+.box .square:nth-child(3){
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.box .square:nth-child(4){
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.box .square:nth-child(5){
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.form{
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.form h2{
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.form h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 90px;
+    height: 4px;
+    background: #fff;
+}
+
+.form .inputBox{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputBox input{
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 25px;
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.form .inputBox input::placeholder{
+    color: #fff;
+}
+
+.form .inputBox input[type="submit"]{
+    max-width: 100px;
+    background: #ffffff95;
+    color: #10101095;
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.form .inputBox input[type="submit"]:hover{
+    background: #8450e430;
+    color: #fff;
+}
+
+.forget{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.forget a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.forget a:hover{
+    letter-spacing: 2px;
+    transition: 0.3s;
+    color: #8450e470;
+}
+
+.newAccount{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.newAccount a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.newAccount a:hover{
+    letter-spacing: 2px;
+    transition: 0.3s;
+    color: #a950e470;
+}
+
+

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu";
+  }
+  
+  body{
+    background: url(img/bg.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginForm{
+    width: calc(100% - 20px);
+    max-width: 500px;
+    background-color: rgba(246, 105, 228, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  
+  .loginForm h1{
+    text-align: center;
+    margin: 35px 0;
+    font-size: 36px;
+    color: #5b077c;
+    font-size: 36px;
+  }
+  
+  .loginForm h1 span{
+    color: #38042d;
+  }
+  
+  .textBox{
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .textBox input{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #fdcaf7;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 14px 60px 0 25px;
+  }
+  
+  .placeholder{
+    color: rgba(57, 4, 46, 0.6);
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    line-height: 60px;
+    top: 0;
+    left: 30px;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  .mostrarSenha{
+    position: absolute;
+    right: 20px;
+    line-height: 70px;
+    color: #5b077c;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .textBox input:focus ~ .placeholder,
+  .textBox input:valid ~ .placeholder{
+    left: 25px;
+    top: -15px;
+  }
+  
+  .checkbox{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5b077c;
+    margin: 20px 0;
+  }
+  
+  .checkbox input{
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: #fdcaf7;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .checkbox .fa-check{
+    position: absolute;
+    font-size: 14px;
+    width: 20px;
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  
+  .checkbox input:checked{
+    background-color: #5b077c;
+  }
+  
+  .checkbox input:checked + .fa-check{
+    opacity: 1;
+    color: #fdcaf7;
+  }
+  
+  .btn{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 40px auto;
+    background-color: #5b077c;
+    color: #fdcaf7;
+    font-size: 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s linear;
+  }
+  
+  .btn:hover{
+    background: #5b077c80;
+  }
+  
+  .btn:disabled{
+    background-color: transparent;
+    color: #fdcaf7;
+    border: 2px solid;
+  }
+
+  .loginForm a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #5b077c;
+    font-weight: 400;
+    margin-bottom: 12px;
+    transition: .2s linear;
+  }
+  
+  .loginForm a:hover{
+    letter-spacing: 2px;
+  }
+  
+
+  .logo{
+      width: 30px;
+      height: 30px;
+      display: block;
+      margin: 10px auto;
+  }
